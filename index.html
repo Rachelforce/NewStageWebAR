@@ -29,9 +29,9 @@ function getMobileOperatingSystem() {
 function DetectAndServe(){
     let os = getMobileOperatingSystem();
     if (os === "Android") {
-        window.location.href = "redirects/ios.html";
-    } else if (os === "iOS") {
         window.location.href = "redirects/and.html";
+    } else if (os === "iOS") {
+        window.location.href = "redirects/ios.html";
     } else {
         window.location.href = "redirects/ios.html";
     }
