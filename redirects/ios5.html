@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>NewStageTest</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/focus-visible@5.1.0/dist/focus-visible.js"></script>
+    <script type="module" src="https://unpkg.com/@google/model-viewer@1.12.0/dist/model-viewer.min.js"></script>
+    <link rel="stylesheet" href="../style-ios.css">
+</head>
+<body>
+<model-viewer id="modelViewer" src="../models/model5.glb" camera-controls shadow-intensity="1" touch-action="none">
+    <div id="buttons">
+        <div class="button button-blur">
+            <span class="left"><img src="../resources/ar_icon.png" alt=""></span>
+            <span class="right">
+                <p>посмотреть в AR</p>
+            </span>
+            <a rel="ar" class="ar-button"
+               href="../models/model5.usdz"><img src="../resources/logo.svg" width="0" height="0" alt="">
+            </a>
+        </div>
+
+    </div>
+</model-viewer>
+</body>
+<script src="../inobounce.js"></script>
+</html>
